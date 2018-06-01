@@ -12,12 +12,14 @@ var firstName = "Meg";
 
 
 //when you declare a variable and assign a value to it, JavaScript will read the right side of the equation,
-//evaluate the value, and store the value in the left side (in the variable name). That variable name now //represents that value.
+//evaluate the value, and store the value in the left side (in the variable name). That variable name now 
+//represents that value.
 var num1 = 3 + 5;//8 is stored in num1
 console.log(num1) //8
 
 
-//co27 is an array. Arrays are like lists and you can access each item in the list with bracket notataion //and the index you want. Indexes start at 0. 
+//co27 is an array. Arrays are like lists and you can access each item in the list with bracket notataion 
+//and the index you want. Indexes start at 0. 
 var co27 = ["John", "Grady", "Klaus"];
 var firstPerson = co27[0]; //JavaScript will evaluate what's on the right side of the equation and store it in the left
 console.log(firstPerson); //John
@@ -41,11 +43,14 @@ var cohort27 = {
 
 console.log(cohort27.instructor);//Brenda Long
 console.log(cohort27.students[2]);//Grady
-//we will access data within an object the same way we are used to, with brack notation when we are dealing //with an array, and dot notation when we are dealing with an object. Here, we are going into the cohort27 //object, then into the students array and then into the meg object
+//we will access data within an object the same way we are used to, with brack notation when we are dealing 
+//with an array, and dot notation when we are dealing with an object. Here, we are going into the cohort27 
+//object, then into the students array and then into the meg object
 console.log(cohort27.students[0].lastName);//Ducharme
 
 
-//accesssing the DOM from JavaScript and inserting an inspirational message via JavaScript - don't worry //about this too much for right now, but know that it can be done. 
+//accesssing the DOM from JavaScript and inserting an inspirational message via JavaScript - don't worry 
+//about this too much for right now, but know that it can be done. 
 var c27 = document.getElementById("c27");
 c27.innerHTML = "You can do it!🐷";
 
@@ -77,7 +82,8 @@ console.log("My name is " + fullName);
 var favoritePlaces = ["Baltimore", "Thailand", "Johnson City", "Crema", "Boston"];
 
 
-//arrays have PROPERTIES on them, just like objects. The length property will tell us how many items are in //an array. We access that by doing array.length
+//arrays have PROPERTIES on them, just like objects. The length property will tell us how many items are in 
+//an array. We access that by doing array.length
 console.log(favoritePlaces.length);
 
 
@@ -94,7 +100,9 @@ for (var i = 0; i < favoritePlaces.length; i++) {
 }
 
 
-//functions are little bits of code that you want to run over and over and over again. You can pass the //function "raw materials" and get out a "finished product." In this example, we are passing the function n//umbers as raw materials and getting the sum as the finished product.
+//functions are little bits of code that you want to run over and over and over again. You can pass the 
+//function "raw materials" and get out a "finished product." In this example, we are passing the function 
+//numbers as raw materials and getting the sum as the finished product.
 //when you declare (or define) a function, it will not run until you call or invoke it (line 92)
 //when you return a value from a funtion, it will return to where you called the function (line 92)
 var add = function(num1, num2){
@@ -104,7 +112,8 @@ var add = function(num1, num2){
 var addedNumbers = add(3, 4);
 
 
-//write a function that takes two arguments, a drink type and a coffee shop name. Print the sentence to the //console 'Meg wants a latte from Frothy Monkey'
+//write a function that takes two arguments, a drink type and a coffee shop name. Print the sentence to the 
+//console 'Meg wants a latte from Frothy Monkey'
 var getMeCoffee = function(drink, shop){
   console.log("Meg wants a " + drink + " from " + shop);
 };
